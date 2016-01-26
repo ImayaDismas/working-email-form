@@ -13,36 +13,25 @@
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Fontin">
       </head>
         <body>
-            <div class="row">
+            <form action="" method="post" value="submit" enctype="text/plain">
+          <div class="row">
              
               <div class="columns small-12">
                   <h1>Email Form</h1>
-                    <form method="post" action="http://www.example.com/cgi-bin/FormMail.pl" 
-                        accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; 
-                        document.charset = 'ISO-8859-1'; 
-                        window.onbeforeunload = function () {document.charset=originalCharset;};">
-                        Name
-                        <br />
-                        <input name="realname" />
-                        <br />
-                        Email
-                        <br />
-                        <input name="email" />
-                        <br />
-                        Message
-                        <br />
-                        <textarea cols="40" rows="10" name="Message"></textarea>
-                        <br />
-                        <input type="submit" value="Send" />
-                        <input type="hidden" name="recipient" value="imayadismas@gmail.com" />
-                        <input type="hidden" name="subject" value="Subject" />
-                        <input type="hidden" name="redirect" 
-                        value="http://www.example.com/thanks.html" />
-                        <input type="hidden" name="missing_fields_redirect" 
-                        value="http://www.example.com/error.html" />
-                        <input type="hidden" name="required" value="realname,email,Message" />
-                        </form>
               </div>
           </div>
+          <div class="row">
+              <div class="columns small-6">
+                  <input style="background-color:transparent" type="text" name="name" placeholder="Name..." id="id_number2" size="10" maxlength="10" />
+              </div> 
+              <div class="columns small-6">
+                  <input style="background-color:transparent" type="email" name="email" placeholder="Email..." type="email" required/> 
+              </div>
+              <div class="columns small-12">
+                  <textarea  style="background-color:transparent" name="message" id="id_number" rows="10" cols="100" wrap="physical" placeholder="Your Message here..."></textarea>
+              </div>
+              <button width="30%" boarder-radius="25px" class="button" type="submit">Submit</button> 
+          </div>
+          </form>
         </body>
 </html>
